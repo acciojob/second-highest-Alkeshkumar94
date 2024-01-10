@@ -12,6 +12,11 @@
 			//Write your code here\
 			let fir=arr[0]
 			let sec=arr[1];
+			  if (arr.length < 2) {
+        return "Infinity";
+    }
+
+			
 			for(let i=2;i<arr.length;i++){
 				if(arr[i]>fir)
 				{
@@ -22,11 +27,11 @@
 				{
 					sec=arr[i];
 				}
-				else{
-					sec="Infinty";
-				}
+				
+				
 			}
-			return sec;
+			
+			
 		}
 
 		function Main() {
