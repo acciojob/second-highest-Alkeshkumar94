@@ -12,21 +12,23 @@
 			//Write your code here\
 			let fir=arr[0]
 			let sec=arr[1];
+			let max=Math.max(fir,sec);
+			let semax=Math.min(fir,sec);
 			  if (arr.length < 2) {
         return "-Infinity";
     }
 
 			
 			for(let i=2;i<arr.length;i++){
-				if(arr[i]>fir)
+				if(arr[i]>max)
 				{
-					sec=fir;
-					fir=arr[i];
+					semax=max;
+					max=arr[i];
 				}
 				
 				}
 			}
-		return sec;	
+		return semax;	
 		}
 		
 
