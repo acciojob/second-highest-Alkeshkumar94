@@ -25,9 +25,12 @@
 					semax=max;
 					max=arr[i];
 				}
+				else if (arr[i] > semax && arr[i] !== max) {
+            semax = arr[i];
+        }
 				
 				}
-			}
+			
 		return semax;	
 		}
 		
